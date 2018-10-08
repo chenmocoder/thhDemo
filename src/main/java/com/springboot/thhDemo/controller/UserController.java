@@ -26,7 +26,7 @@ public class UserController {
         return userList;
     }
 
-    @RequestMapping(value = "addUser")
+    @RequestMapping(value = "/addUser")
     public String addUser() {
         User user = new User();
         user.setUsername("test001");

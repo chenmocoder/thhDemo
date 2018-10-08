@@ -42,8 +42,7 @@ public class UserAndRole {
         RoleId = roleId;
     }
 
-    public UserAndRole(Long id, Long userId, Long roleId) {
-        Id = id;
+    public UserAndRole( Long userId, Long roleId) {
         this.userId = userId;
         RoleId = roleId;
     }

@@ -75,10 +75,10 @@ public class ShiroConfig {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager());
         Map<String,String> filterChain = new LinkedHashMap<String,String>();
-        filterChain.put("/user/*","authc,roles[ROLE_ADMIN]");
+        filterChain.put("/user/userList","authc,roles[ROLE_ADMIN]");
         System.out.println("in shiro config permission");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChain);
-        shiroFilterFactoryBean.setUnauthorizedUrl("/403");
+//        shiroFilterFactoryBean.setUnauthorizedUrl("/403");
         return shiroFilterFactoryBean;
     }
 

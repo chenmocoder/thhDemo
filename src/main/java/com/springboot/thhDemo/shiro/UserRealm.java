@@ -32,7 +32,7 @@ public class UserRealm extends AuthorizingRealm{
         logger.info("str====="+str);
         logger.info("");
         Set<String> roleSet = new HashSet<String>();
-        roleSet.add("ROLE_ADMIN");
+//        roleSet.add("ROLE_ADMIN");
         SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
         simpleAuthorizationInfo.setRoles(roleSet);
         Set tempSet = simpleAuthorizationInfo.getObjectPermissions();
