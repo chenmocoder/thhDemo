@@ -3,26 +3,35 @@ package com.springboot.thhDemo.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "USER")
+@Table(name = "thhDemo_user")
 public class User {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "id")
-    public Long id;
+    @Column(name = "Id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long Id;
 
     @Column(name = "username")
     public String username;
+
+    public User() {
+    }
+
+    public User(String username, String password, String label) {
+        this.username = username;
+        this.password = password;
+        this.label = label;
+    }
 
     @Column(name = "password")
     public String password;
 
     public Long getId() {
-        return id;
+        return Id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        Id = id;
     }
 
     @Column(name = "label")

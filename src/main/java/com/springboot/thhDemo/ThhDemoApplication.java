@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import java.net.URISyntaxException;
 
 @SpringBootApplication
+//spring data jpa 在程序启东时使用注解家在 repositories
 @EnableJpaRepositories("com.springboot.thhDemo.Repository")
 public class ThhDemoApplication {
 

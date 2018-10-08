@@ -18,12 +18,7 @@ public class UserService{
 
     public User userAuthenByUserName(String username) {
         User user = new User();
-        logger.info("service username ==" + username);
-        if(username.equals("test001")) {
-            user.setUsername("test001");
-            user.setPassword("123123");
-            user.setLabel("happy person ");
-        }
+//        repository.find
         return user;
     }
 
